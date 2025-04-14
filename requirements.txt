@@ -1,0 +1,21 @@
+# Core dependencies
+crewai
+openai
+python-dotenv
+
+# PDF and document tools
+pdfplumber
+PyMuPDF
+
+# Git and CLI
+GitPython
+
+# Optional: code parsing & analysis
+asttokens
+autopep8
+
+# For backend tasks and API interaction (optional if you're building a UI later)
+fastapi
+uvicorn
+
+# If using Code Server Docker container (for web-based IDE, runs in ide/Dockerfile)
