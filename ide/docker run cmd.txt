@@ -1,0 +1,1 @@
+docker run -d -p 8080:8080 -v /d/R-D-Assistant/ide:/home/coder/project --name r_and_d_assistant_ide code-server
