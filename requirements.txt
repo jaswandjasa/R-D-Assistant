@@ -19,3 +19,7 @@ fastapi
 uvicorn
 
 # If using Code Server Docker container (for web-based IDE, runs in ide/Dockerfile)
+docker
+
+# Add for web UI
+streamlit

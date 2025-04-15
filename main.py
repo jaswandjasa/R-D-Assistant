@@ -1,7 +1,20 @@
 from crew.main_crew import AssistantCrew
 
-if __name__ == "__main__":
-    prompt = input("What do you want me to help you build today? ")
+def chat_loop():
+    print("Welcome to the R&D Assistant! Type 'exit' to quit.")
     crew = AssistantCrew()
-    result = crew.run(prompt)
-    print("\nResult:\n", result)
+    
+    while True:
+        prompt = input("\nWhat do you want me to help you with? ")
+        if prompt.lower() == "exit":
+            print("Goodbye!")
+            break
+        
+        try:
+            result = crew.run(prompt)
+            print("\nResult:\n", result)
+        except Exception as e:
+            print(f"\nError: {str(e)}")
+
+if __name__ == "__main__":
+    chat_loop()
